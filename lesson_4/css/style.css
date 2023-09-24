@@ -1,0 +1,42 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+p {
+    color: black;
+}
+
+h2 {
+    color: orange;
+}
+
+h3 {
+    color: green;
+}
+
+ul li {
+    color: blue;
+}
+
+.topic {
+    color: black;
+}
+
+.note * {
+    color: red;
+}
+
+.example-container p {
+    color: darkblue;
+}
+
+main > p {
+    color: purple;
+}
+
+#subtopic-2 + p {
+    color: darkgray;
+}
+
+#subtopic-5 ~ p {
+    color: red;
+}
