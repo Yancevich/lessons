@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Sofia-Sans";
+    src: url(../fonts/SofiaSansExtraCondensed-Regular.woff2) format("woff2"),
+    url(../fonts/SofiaSansExtraCondensed-Regular.woff) format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sofia-Sans";
+    src: url(../fonts/SofiaSansExtraCondensed-Italic.woff2) format("woff2"),
+    url(../fonts/SofiaSansExtraCondensed-Italic.woff) format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Sofia-Sans";
+    src: url(../fonts/SofiaSansExtraCondensed-Bold.woff2) format("woff2"),
+    url(../fonts/SofiaSansExtraCondensed-Bold.woff) format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}

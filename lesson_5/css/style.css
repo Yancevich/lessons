@@ -1,0 +1,156 @@
+/* ========================= ШРИФТИ =============================== */
+/*------------------- Підключення шрифтів ------------------------- */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+
+/* Ручне підключення */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7D7D7D;
+    font-weight: 400;
+}
+
+
+/*------------------- Верстка блоків з макету Consulting -------------------*/
+.title,
+.title-2,
+.sub-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 127%;
+}
+
+.title {
+    font-size: 30px;
+    color: #37393F;
+    text-transform: capitalize;
+}
+
+.sub-title {
+    font-size: 20px;
+    color: #6B77E5;
+}
+
+.text {
+    line-height: 147%;
+}
+
+.title-2 {
+    font-size: 40px;
+    color: #37393F;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.list {
+    text-indent: 20px;
+    font-weight: 500;
+}
+
+/*------------------- Кінець верстки блоків з макету -------------------*/
+
+/*------------------- Верстка статті -------------------*/
+
+.my-article {
+    font-family: "Sofia-Sans", sans-serif;
+    font-size: 20px;
+    color: #212230;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.title-article {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 125%;
+}
+
+.sub-title-article {
+    font-size: 30px;
+    color: #0a2c92;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.red {
+    color: #ff9999;
+}
+
+.list-article {
+    text-indent: 20px;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+code {
+    font-size: 16px;
+}
+
+.p-shadow {
+    text-shadow: 3px 3px 2px rgba(200, 100, 20, 1);
+}
+
+.p-upercase {
+    text-transform: uppercase;
+}
+
+.p-lowercase {
+    text-transform: lowercase;
+}
+
+.p-capitalize {
+    text-transform: capitalize;
+}
+
+.p-letter-spacing {
+    letter-spacing: 10px;
+}
+
+.p-word-spacing {
+    word-spacing: 10px;
+}
+
+.p-line-through {
+    text-decoration: line-through;
+}
+
+.p-overline {
+    text-decoration: overline;
+}
+
+.p-underline {
+    text-decoration: underline;
+}
+
+.p-center {
+    text-align: center;
+    color: red;
+}
+
+.p-left {
+    text-align: left;
+    color: blue;
+}
+
+.p-right {
+    text-align: right;
+    color: purple;
+}
+
+.p-justify {
+    text-align: justify;
+}
+
+.p-italic {
+    font-style: italic;
+}
