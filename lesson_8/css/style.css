@@ -1,0 +1,505 @@
+/* ========================= ШРИФТИ =============================== */
+/*------------------- Підключення шрифтів ------------------------- */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7D7D7D;
+}
+
+
+/*------------------- Напрацювання властивостей -------------------*/
+
+.header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.topic {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.block-color {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: yellow;
+    margin-bottom: 20px;
+}
+
+.block-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url("../img/img_01.jpg");
+    margin-bottom: 20px;
+}
+
+.stick {
+    height: 400px;
+    width: 15px;
+    background-color: black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.block-gradient {
+    width: 300px;
+    height: 200px;
+    border-radius: 0% 100% 9% 91% / 68% 22% 78% 32%;
+    background: linear-gradient(189deg, rgba(0, 56, 219, 1) 50%, rgba(245, 255, 0, 1) 50%);
+}
+
+.block-no-repeat {
+    background-color: black;
+    width: 1000px;
+    height: 700px;
+    background-image: url("../img/img_01.jpg");
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.block-repeat {
+    width: 1000px;
+    height: 700px;
+    background-image: url("../img/img_01.jpg");
+    background-repeat: repeat;
+    margin-bottom: 20px;
+}
+
+.block-repeat-x {
+    background-color: black;
+    width: 1000px;
+    height: 700px;
+    background-image: url("../img/img_01.jpg");
+    background-repeat: repeat-x;
+    margin-bottom: 20px;
+}
+
+.block-repeat-y {
+    background-color: black;
+    width: 1000px;
+    height: 700px;
+    background-image: url("../img/img_01.jpg");
+    background-repeat: repeat-y;
+    margin-bottom: 20px;
+}
+
+.block-position-default {
+    background-color: black;
+    width: 1000px;
+    height: 700px;
+    background-image: url("../img/img_02.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-bottom: 20px;
+}
+
+.block-position-bottom-right {
+    background-color: black;
+    width: 1000px;
+    height: 700px;
+    background-image: url("../img/img_02.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    margin-bottom: 20px;
+}
+
+.block-position-center {
+    background-color: black;
+    width: 1000px;
+    height: 700px;
+    background-image: url("../img/img_02.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.block-fixed {
+    background-color: black;
+    width: 1000px;
+    height: 700px;
+    background-image: url("../img/img_01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+    background-attachment: fixed;
+}
+
+.block-cover {
+    background-color: black;
+    width: 1000px;
+    height: 200px;
+    background-image: url("../img/img_02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    margin-bottom: 20px;
+}
+
+.block-contain {
+    background-color: black;
+    width: 1000px;
+    height: 200px;
+    background-image: url("../img/img_02.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 20px;
+}
+
+.block-size-200px {
+    background-color: black;
+    width: 1000px;
+    height: 200px;
+    background-image: url("../img/img_02.jpg");
+    background-repeat: no-repeat;
+    background-size: 700px;
+    margin-bottom: 20px;
+}
+
+.block-background {
+    width: 500px;
+    height: 500px;
+    background: yellow linear-gradient(90deg, #ff3f3a 0%, #3a3dff 50%, #f75e05 100%) center / 20% 10% no-repeat;
+    margin-bottom: 50px;
+}
+
+/*------------------- Скрін 1 -------------------*/
+
+.container-1 {
+    max-width: 680px;
+    margin: 0 auto;
+    /* font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7D7D7D; */
+}
+
+.mark-p {
+    color: #37393F;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding-left: 18px;
+    background: url("../img/Box.svg") no-repeat left center;
+    text-transform: capitalize;
+}
+
+.title {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 121%;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.text {
+    color: #7D7D7D;
+    font-family: "Inter", sans-serif;
+    line-height: 147%;
+    margin-bottom: 20px;
+}
+
+.text>p {
+    margin-bottom: 15px;
+}
+
+.list {
+    margin-bottom: 23px;
+}
+
+.list li {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    padding-left: 35px;
+    margin-bottom: 23px;
+    background: url("../img/li.svg") no-repeat 0 3px;
+    line-height: 1.7;
+
+}
+
+.cards {
+    margin-bottom: 37px;
+}
+
+.cards-block {
+    display: inline-block;
+    max-width: 300px;
+    max-height: 140px;
+    border: 1px solid #E3E3E3;
+    padding: 32px;
+    font-size: 0;
+    margin-right: 20px;
+}
+
+.experience-content {
+    padding-left: 60px;
+    background: url("../img/exp_img.svg") no-repeat left top / 40px 40px;
+}
+
+.awards-content {
+    padding-left: 60px;
+    background: url("../img/awrd_img.svg") no-repeat left top / 40px 40px;
+}
+
+.cards-title {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.cards-text {
+    color: #7D7D7D;
+    font-size: 16px;
+    line-height: 135%;
+}
+
+.button {
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    font-weight: 600;
+    padding: 21px 27px;
+    background: #6B77E5;
+    margin-bottom: 50px;
+}
+
+
+/*------------------- Скрін 2 -------------------*/
+
+.container-2 {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.block-title-2 {
+    max-width: 852px;
+    margin-bottom: 47px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box {
+    background: url("../img/Box.svg") no-repeat left center;
+    padding-right: 18px;
+}
+
+.mark-p-2 {
+    display: inline-block;
+    color: #37393F;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.title-2 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    margin-bottom: 15px;
+}
+
+.text {
+    color: #7D7D7D;
+    font-family: "Inter", sans-serif;
+    line-height: 147%;
+}
+
+.gallery {
+    font-size: 0;
+}
+
+.gallery>.card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+    display: inline-block;
+    width: 384px;
+    padding-top: 525px;
+    margin-right: 34px;
+    margin-bottom: 60px;
+}
+
+.card-1 {
+    background: url(../img/first_card.jpg) left top / 384px 501px no-repeat;
+}
+
+.card-2 {
+    background: url(../img/second_card.jpg) left top / 384px 501px no-repeat;
+}
+
+.card-3 {
+    background: url(../img/third_photo.jpg) left top / 384px 501px no-repeat;
+    margin-right: 0;
+}
+
+.card-4 {
+    background: url(../img/fourth_card.jpg) left top / 384px 501px no-repeat;
+}
+
+.card-5 {
+    background: url(../img/fifth_card.jpg) left top / 384px 501px no-repeat;
+}
+
+.card-6 {
+    background: url(../img/sixth_card.jpg) left top / 384px 501px no-repeat;
+    margin-right: 0;
+}
+
+.sub-title {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 127%;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 146.187%;
+    padding-left: 25px;
+    background: url("../img/data_img.svg") no-repeat left center;
+}
+
+/*------------------- Скрін 3 -------------------*/
+
+.container-3 {
+    max-width: 1240px;
+    color: #807D7E;
+    font-family: "Causten", sans-serif;
+    font-size: 20px;
+    line-height: 1.675;
+    letter-spacing: 0.4px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.container-3 .title {
+    display: inline-block;
+    color: #3C4242;
+    font-family: "Core Sans C", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.56px;
+    background: url("../img/purple_stick.svg") no-repeat left center;
+    padding-left: 20px;
+}
+
+.container-3 .content {
+    padding: 0px 20px;
+}
+
+.container-3 .sub-topic {
+    color: #807D7E;
+    font-family: "Core Sans C", sans-serif;
+    line-height: 1.67;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.container-3 .text {
+    margin-bottom: 25px;
+}
+
+.container-3 .text>p {
+    color: #807D7E;
+    font-family: "Causten", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33.5px;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
+}
+
+.container-3 .bold {
+    font-weight: 700;
+}
+
+/*------------------- Скрін 4 -------------------*/
+
+.container-4 {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.block {
+    font-size: 0;
+}
+
+.first-half {
+    display: inline-block;
+    width: 614px;
+    min-height: 640px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url("../img/plants.jpg") center / cover no-repeat;
+    padding-top: 183px;
+    padding-left: 74px;
+    vertical-align: middle;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container-4 .content {
+    max-width: 466px;
+}
+
+.title-4 {
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: "Core Sans C", sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0.208px;
+    margin-bottom: 30px;
+}
+
+.text-4 {
+    color: #FFF;
+    font-family: "Causten";
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.button-4 {
+    display: inline-block;
+    padding: 12px 44px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.button-4 span {
+    color: #3C4242;
+    font-family: "Causten", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.second-half {
+    display: inline-block;
+    width: 626px;
+    min-height: 640px;
+    background: url("../img/funny_guys.jpg") top / cover no-repeat;
+    vertical-align: middle;
+    border-radius: 0px 10px 10px 0px;
+}
