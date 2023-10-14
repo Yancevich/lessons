@@ -1,0 +1,643 @@
+/*------------------- Підключення шрифтів ------------------------- */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7D7D7D;
+}
+
+
+/*------------------- Напрацювання властивостей -------------------*/
+
+header {
+    background-color: #363062;
+    padding: 30px 0px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    color: #F5F5F5;
+    margin-bottom: 30px;
+}
+
+.header-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    color: #F99417;
+}
+
+.header-block {
+    border-radius: 15px;
+    background-color: #4D4C7D;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header-container .header-block:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.header-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.header-text {
+    color: #F5F5F5;
+}
+
+.header-text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.header-text li:not(:last-child), .header-text p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* hover */
+
+.header-hover {
+    display: inline-block;
+}
+
+.header-hover span {
+    display: none;
+}
+
+.header-hover:hover {
+    color: red;
+    text-decoration: underline solid;
+}
+
+.header-hover:hover span {
+    display: inline;
+}
+
+/* active */
+
+.header-active {
+    display: inline-block;
+}
+
+.header-active:active {
+    color: red;
+    letter-spacing: 20px;
+}
+
+/* visited */
+
+header a:hover {
+    text-decoration: underline solid;
+}
+
+.header-visited:visited {
+    color: red;
+}
+
+/* focus */
+
+.header-focus:focus {
+    outline: double 10px;
+    color: red;
+}
+
+/* target */
+
+.header-target {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.box {
+    display: none;
+}
+
+.box:target {
+    display: block;
+}
+
+.box img {
+    width: 200px;
+}
+
+/* first-child */
+
+.header-text.first-child p:first-child {
+    color: red;
+}
+
+/* first-of-type */
+
+.margin-div {
+    margin-bottom: 10px;
+}
+
+.header-text.first-of-type p:first-of-type {
+    color: red;
+}
+
+/* last-child */
+
+.header-text.last-child p:last-child {
+    color: red;
+}
+
+/* last-of-type */
+
+.header-text.last-of-type p:last-of-type {
+    color: red;
+}
+
+/* nth-child() */
+
+.header-text.nth-child p:nth-child(3) {
+    color: red;
+}
+
+.header-text.annotation {
+    background-color: #F99417;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.annotation-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 6px 7px rgba(0, 0, 0, 0.32);
+}
+
+/* ::before */
+
+.header-text li::before {
+    background-color: #F99417;
+    content: "";
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.8s ease 0s;
+}
+
+.header-text li:hover::before {
+    transform: scale(1.5);
+}
+
+/*------------------- Гра -------------------*/
+
+main {
+    background: url('../img/windows_xp_desktop.jpg') no-repeat center / 100% 100%;
+    padding: 30px 0px;
+}
+
+.game {
+    padding: 40px 10px 10px 10px;
+    background: url("../img/application_img.gif") no-repeat 0 0 / cover;
+    border-radius: 7px;
+    max-width: 529px;
+    height: 403px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.line-1 {
+    width: 30px;
+    height: 50px;
+    background: url("../img/start_pattern.jpg") 0 0 / 315px;
+}
+
+.line-2 {
+    width: 100%;
+    height: 20px;
+    background: black;
+    visibility: hidden;
+}
+
+.empty_block {
+    width: 499px;
+    height: 20px;
+}
+
+.line-3 {
+    width: 10px;
+    height: 100px;
+    background: black;
+    visibility: hidden;
+}
+
+.line-4 {
+    width: 10px;
+    height: 100px;
+    background: black;
+    visibility: hidden;
+}
+
+.empty_block-2 {
+    width: 259px;
+    height: 10px;
+}
+
+.line-5 {
+    width: 250px;
+    height: 10px;
+    background: black;
+    visibility: hidden;
+}
+
+.line-6 {
+    width: 9px;
+    height: 50px;
+    background: black;
+    visibility: hidden;
+}
+
+.finish {
+    width: 9px;
+    height: 10px;
+    background: red;
+    visibility: hidden;
+}
+
+.line-1:hover+.line-2, .line-2:hover, .line-2:hover+.empty_block+.line-3, .line-3:hover, .line-3:hover+.empty_block+.line-4, .line-4:hover, .line-4:hover+.empty_block-2+.line-5, .line-5:hover, .line-5:hover+.empty_block-2+.line-6, .line-6:hover, .line-6:hover+.empty_block-2+.finish, .finish:hover {
+    visibility: visible;
+}
+
+/* Скрін 1 */
+
+.container-1 {
+    max-width: 692px;
+    padding: 30px 0px;
+    margin: 0 auto;
+}
+
+.main-block {
+    margin-bottom: 40px;
+}
+
+.title,
+.sub-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 127%;
+}
+
+.title {
+    font-size: 30px;
+    color: #37393F;
+    text-transform: capitalize;
+    margin: 0px 0px 20px 0px;
+}
+
+.sub-title {
+    font-size: 20px;
+    color: #6B77E5;
+    margin-bottom: 15px;
+}
+
+.text {
+    line-height: 147%;
+    margin-bottom: 40px;
+}
+
+.benefits-block {
+    font-size: 0;
+    width: 692px;
+}
+
+.img-02 {
+    width: 331px;
+    margin-right: 30px;
+}
+
+.content-benefits {
+    display: inline-block;
+    line-height: 127%;
+    font-size: 18px;
+    width: 331px;
+}
+
+.benefits-title {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.benefits-text {
+    color: #40DDB6;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 27px;
+}
+
+.benefits-list>li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.benefits-list>li::before {
+    content: "";
+    background: url("../img/mark_li.svg") center / 25px 25px no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: -5px;
+}
+
+/* Скрін 2 */
+
+.container-2 {
+    max-width: 673px;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+
+.decor-block {
+    font-size: 0;
+    margin-bottom: 16px;
+}
+
+.decor-block::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #40DDB6;
+    margin-right: 6px;
+}
+
+.decor-p {
+    display: inline-block;
+    color: #37393F;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.content-2 {
+    margin-bottom: 50px;
+}
+
+.title-2 {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 121%;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.text-2 {
+    line-height: 147%
+}
+
+.text-2 *:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.point-block {
+    padding: 28px 38px;
+    border: 1px solid #E3E3E3;
+}
+
+.point-block:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.point-title {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    text-transform: capitalize;
+}
+
+.point-title::before {
+    content: "";
+    background: url("../img/mark_li.svg") center / 27px 27px no-repeat;
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: -5px;
+}
+
+.point-text-block {
+    margin-left: 46px;
+}
+
+.button {
+    display: inline-block;
+    max-width: 200px;
+    padding: 21px 35px;
+    background: #6B77E5;
+}
+
+.button:hover {
+    background: #4b59ea;
+}
+
+.button-text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Скрін 3 */
+
+.container-3 {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+
+.center {
+    text-align: center;
+}
+
+.content-3 {
+    font-size: 0;
+}
+
+.container-3 .title-2 {
+    margin-bottom: 77px;
+}
+
+.process-content {
+    font-size: 0;
+    padding-top: 35px;
+}
+
+.process-block {
+    display: inline-block;
+    max-width: 386px;
+    background: #F4F4F4;
+    padding: 58px 43px;
+    text-align: center;
+}
+
+.process-block:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.icon {
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: -95px auto 22px auto;
+}
+
+.appointment-img {
+    background: url("../img/appointment_img.svg");
+}
+
+.consultation-img {
+    background: url("../img/consultation_img.svg");
+}
+
+.enjoy-img {
+    background: url("../img/enjoy_img.svg");
+}
+
+.process-block:not(:last-child) {
+    margin-right: 31px;
+    margin-bottom: 50px;
+}
+
+.process-title {
+    color: #37393F;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 127%;
+    margin-bottom: 16px;
+}
+
+.container-3 .text-2 {
+    font-size: 18px;
+    margin-bottom: 37px;
+}
+
+.testimonials {
+    color: #6B77E5;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.testimonials:hover {
+    color: #a1a8ee;
+}
+
+/* Скрін 4 */
+
+.container-4 {
+    max-width: 1214px;
+    margin: 0 auto;
+    padding: 30px 0px;
+    font-family: "Cormorant Infant", serif;
+    color: #000;
+    font-weight: 700;
+    font-size: 0;
+}
+
+.title-block {
+    display: inline-block;
+    margin-right: 21px;
+    padding-top: 150px;
+    vertical-align: top;
+}
+
+.title-4 {
+    font-size: 60px;
+    line-height: 115%;
+    max-width: 460px;
+}
+
+.title-decor {
+    display: inline-block;
+    width: 300px;
+    height: 3px;
+    background-color: #78473B;
+}
+
+.card {
+    display: inline-block;
+    max-width: 344px;
+    vertical-align: top;
+    padding-right: 10px;
+}
+
+.container-4 .card:nth-child(2) {
+    padding-top: 32px;
+}
+
+.card:last-child {
+    padding-top: 0px;
+}
+
+.card:not(:last-child) {
+    margin-right: 45px;
+}
+
+.img-border {
+    border: 1px solid #000;
+    margin-bottom: 25px;
+}
+
+.first-item {
+    background: url("../img/first_item.jpg");
+}
+
+.second-item {
+    background: url("../img/second_item.jpg");
+}
+
+.card-img {
+    width: 334px;
+    height: 381px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: -20px;
+    margin-right: -20px;
+    margin: 9px -10px -9px 10px;
+}
+
+.price {
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.price:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.title-card {
+    max-width: 344px;
+    font-size: 46px;
+    line-height: 113%;
+}

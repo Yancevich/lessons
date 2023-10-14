@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 9</title>
+</head>
+
+<body>
+    <!-- Напрацювання властивостей -->
+    <header>
+        <div class="header-container">
+            <h1>Lesson 9</h1>
+            <div class="header-block">
+                <h2 class="header-title">Псевдоклас :hover</h2>
+                <div class="header-text">
+                    <p class="header-hover">
+                        Наведи на мене! <span>Я тепер підкреслений та червоного кольору</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="header-block">
+                <h2 class="header-title">Псевдоклас :active</h2>
+                <div class="header-text">
+                    <p class="header-active">
+                        Натисни на мене!
+                    </p>
+                </div>
+            </div>
+
+            <div class="header-block">
+                <h2 class="header-title">Псевдоклас :visited</h2>
+                <div class="header-text">
+                    <ul>
+                        <li>
+                            <a class="header-visited" href="https://www.w3schools.com/cssref/index.php" target="_blank">
+                                Я посилання, яке міняє колір коли ти тицьнеш на мене і пам'ятає про це!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/cssref/index.php" target="_blank">Я просто посилання</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-block">
+                <h2 class="header-title">Псевдоклас :focus</h2>
+                <div class="header-text">
+                    <p>
+                        <a class="header-focus" href="https://www.w3schools.com/cssref/index.php" target="_blank">
+                            Я посилання, яке міняє колір та outline коли на мені фокусуються!
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="header-block">
+                <h2 class="header-title">Псевдоклас :target</h2>
+                <div class="header-text">
+                    <p>
+                        <a href="#box" class="header-target">Показати картинку!</a>
+                    </p>
+                </div>
+                <div id="box" class="box">
+                    <img src="img/CSS3_logo.png" alt="css_logo">
+                </div>
+            </div>
+
+            <div class="header-block">
+                <h2 class="header-title">Псевдоклас :first-child</h2>
+                <div class="header-text first-child">
+                    <p>Я p1 і я червоний тому, що мені задали власивість `color:red` за допомогою псевдокласу
+                        `:first-child`</p>
+                    <p>Я p2</p>
+                    <p>Я p3</p>
+                    <p>Я p4</p>
+                    <p>Я p5</p>
+                </div>
+            </div>
+
+            <div class="header-block">
+                <h2 class="header-title">Псевдоклас :first-of-type</h2>
+                <div class="header-text first-of-type">
+                    <div class="margin-div">
+                        <span>Я span</span>
+                    </div>
+                    <p>Я p1 і я червоний тому, що мені задали власивість `color:red` за допомогою псевдокласу
+                        `:first-of-type`, однак якщо б мені задали за допомогою `:first-child`, я б не був червоний 😢
+                    </p>
+                    <p>Я p2</p>
+                    <p>Я p3</p>
+                    <p>Я p4</p>
+                    <p>Я p5</p>
+                </div>
+            </div>
+
+            <div class="header-block">
+                <h2 class="header-title">Псевдоклас :last-child</h2>
+                <div class="header-text last-child">
+                    <p>Я p1</p>
+                    <p>Я p2</p>
+                    <p>Я p3</p>
+                    <p>Я p4</p>
+                    <p>Я p5 і я червоний тому, що мені задали власивість `color:red` за допомогою псевдокласу
+                        `:last-child`</p>
+                </div>
+            </div>
+
+            <div class="header-block">
+                <h2 class="header-title">Псевдоклас :last-of-type</h2>
+                <div class="header-text last-of-type">
+                    <p>Я p1</p>
+                    <p>Я p2</p>
+                    <p>Я p3</p>
+                    <p>Я p4</p>
+                    <p>Я p5 і я червоний тому, що мені задали власивість `color:red` за допомогою псевдокласу
+                        `:last-of-type`, однак якщо б мені задали за допомогою `:last-child`, я б не був червоний 😢</p>
+                    <div class="margin-div">
+                        <span>Я span</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-block">
+                <h2 class="header-title">Псевдоклас :nth-child()</h2>
+                <div class="header-text nth-child">
+                    <p>Я p1</p>
+                    <p>Я p2</p>
+                    <p>Я p3 і я червоний тому, що мені задали власивість `color:red` за допомогою псевдокласу
+                        `:nth-child(3)`, вважайте мене особливим😎</p>
+                    <p>Я p4</p>
+                    <p>Я p5</p>
+                </div>
+                <div class="header-text annotation">
+                    <h3 class="annotation-title">Анотація</h3>
+                    <p>:nth-child може приймати як конкретне значення `:nth-child(1)`, так і певний алгоритм
+                        `:nth-child(3n + 1)`, `:nth-child(odd)` - через один не парні, `:nth-child(even)` - через один
+                        парні</p>
+                </div>
+            </div>
+
+            <div class="header-block">
+                <h2 class="header-title">Псевдоелемнт ::before</h2>
+                <div class="header-text">
+                    <ul>
+                        <li>Пункт списку</li>
+                        <li>Пункт списку</li>
+                        <li>Пункт списку</li>
+                        <li>Пункт списку</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="game">
+            <div class="line-1 inline-block"></div>
+            <div class="line-2 inline-block"></div>
+            <div class="empty_block inline-block"></div>
+            <div class="line-3 inline-block"></div>
+            <div class="empty_block inline-block"></div>
+            <div class="line-4 inline-block"></div>
+            <div class="empty_block-2 inline-block"></div>
+            <div class="line-5 inline-block"></div>
+            <div class="empty_block-2 inline-block"></div>
+            <div class="line-6 inline-block"></div>
+            <div class="empty_block-2 inline-block"></div>
+            <div class="finish inline-block"></div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Скрін 1 -->
+        <div class="container-1">
+            <div class="main-block">
+                <h2 class="title">
+                    Why Us For International Business Management Consulting!
+                </h2>
+                <div class="text">
+                    <p>
+                        Completely synergized resourced taxings relationships premiers markets ultivate one-to-one
+                        customer
+                        service with robust ideas dynamically innovated resources leveling customer service for state of
+                        the
+                        art customer service innovate product for reliable supply engage web services cutting-edge
+                        deliverables.
+                    </p>
+                </div>
+                <h3 class="sub-title">
+                    Proactively envisioned multimedia based expertise media growth superior collaboration.
+                </h3>
+                <div class="text">
+                    <p>
+                        One-to-one customer service with robust ideas dynamically innovated resources for reliable
+                        supply
+                        engage web services cutting-edge deliverables.
+                    </p>
+                </div>
+            </div>
+
+            <div class="benefits-block">
+                <img class="img-02" src="img/img_02.jpg" alt="Фото пк">
+                <div class="content-benefits">
+                    <h3 class="benefits-title">
+                        Our benefits
+                    </h3>
+                    <p class="benefits-text">
+                        Incubate standards compliant channels benefits.
+                    </p>
+                    <ul class="benefits-list">
+                        <li>Credibly reintermediate backend</li>
+                        <li>Holistically foster superior</li>
+                        <li>Distinctively exploit optimal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Скрін 2 -->
+        <div class="container-2">
+            <div class="decor-block">
+                <p class="decor-p">Welcome Whitecollar</p>
+            </div>
+            <div class="content-2">
+                <h2 class="title-2">We Care About Your
+                    Business Plan.</h2>
+                <div class="text-2">
+                    <p>
+                        Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+                        approaches to corporate strategy foster collaborative thinking to further the overal.
+                    </p>
+                    <p>
+                        Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+                        approaches to corporate strategy
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-2">
+                <div class="point-block">
+                    <h3 class="point-title">Our Vision</h3>
+                    <div class="point-text-block text-2">
+                        <p>
+                            Capitalize on low hanging fruit to identify a ballpark value added activity to beta
+                            clickthroughs.
+                        </p>
+                    </div>
+                </div>
+                <div class="point-block">
+                    <h3 class="point-title">Our Mision</h3>
+                    <div class="point-text-block text-2">
+                        <p>
+                            Podcasting operational change management inside of workflows to establish a framework.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="button" href="#">
+                <span class="button-text">More About Us</span>
+            </a>
+        </div>
+
+        <!-- Скрин 3 -->
+        <div class="container-3">
+            <div class="decor-block center">
+                <p class="decor-p">Work Process</p>
+            </div>
+
+            <div class="content-3">
+                <h2 class="title-2 center">How We Work</h2>
+                <div class="process-content">
+                    <div class="process-block">
+                        <div class="icon appointment-img"></div>
+                        <h3 class="process-title">Make Appointment</h3>
+                        <div class="text-2">
+                            <p>
+                                Leverage agile frameworks provide
+                                synopsishigh level overviews
+                                value proposition.
+                            </p>
+                        </div>
+                        <a class="testimonials" href="#">Testimonials</a>
+                    </div>
+
+                    <div class="process-block">
+                        <div class="icon consultation-img"></div>
+                        <h3 class="process-title">Consultation</h3>
+                        <div class="text-2">
+                            <p>
+                                Leverage agile frameworks provide
+                                synopsishigh level overviews
+                                value proposition.
+                            </p>
+                        </div>
+                        <a class="testimonials" href="#">Testimonials</a>
+                    </div>
+
+                    <div class="process-block">
+                        <div class="icon enjoy-img"></div>
+                        <h3 class="process-title">Enjoy the Service</h3>
+                        <div class="text-2">
+                            <p>
+                                Leverage agile frameworks provide
+                                synopsishigh level overviews
+                                value proposition.
+                            </p>
+                        </div>
+                        <a class="testimonials" href="#">Testimonials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Скрін 4 -->
+        <div class="container-4">
+            <div class="title-block">
+                <h2 class="title-4">We Develop Create Custom Jewels.</h2>
+                <div class="title-decor"></div>
+            </div>
+
+            <a class="card" href="#">
+                <div class="img-border">
+                    <div class="card-img first-item"></div>
+                </div>
+                <p class="price">Embossed hoop earrings</p>
+                <p class="price">$144.00</p>
+            </a>
+
+            <a class="card" href="#">
+                <h2 class="title-card">#02<br>new jewellery collection</h2>
+                <div class="img-border">
+                    <div class="card-img second-item"></div>
+                </div>
+                <p class="price">Embossed hoop earrings</p>
+                <p class="price">$144.00</p>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
