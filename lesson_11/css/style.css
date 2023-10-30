@@ -1,0 +1,19 @@
+/*------------------- Підключення шрифтів ------------------------- */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+
+/*------------------- Напрацювання властивостей -------------------*/
+
+.sidebar__move-button {
+    width: 21px;
+    height: 21px;
+}
+.sidebar__move-button--up {
+    background: url("../img/move-up.svg") no-repeat 0 0 / 21px 21px;
+}
+.sidebar__move-button--down {
+    background: url("../img/move-down.svg") no-repeat 0 0 / 21px 21px;
+}
