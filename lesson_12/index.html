@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 12</title>
+</head>
+
+<body class="body">
+    <div class="wrapper">
+        <header class="header header--fix">
+            <!-- Меню -->
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#homework" class="menu__link">Напрацювання</a>
+                    </li>
+                    <li class="menu__item menu__item--sub">
+                        <a href="#sticky-section" class="menu__link">Липкі секції</a>
+                        <ul class="menu__menu-sub sub-menu">
+                            <li class="sub-menu__item sub-menu__item--sub">
+                                <a href="#title-1" class="sub-menu__link">
+                                    Sticky title 1
+                                </a>
+                                <ul class="sub-menu__menu-side side-menu">
+                                    <li class="side-menu__item">
+                                        <a href="#" class="side-menu-link">Text</a>
+                                    </li>
+                                    <li class="side-menu__item">
+                                        <a href="#" class="side-menu-link">Text</a>
+                                    </li>
+                                    <li class="side-menu__item">
+                                        <a href="#" class="side-menu-link">Text</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#title-2" class="sub-menu__link">
+                                    Sticky title 2
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#title-3" class="sub-menu__link">
+                                    Sticky title 3
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#consulting" class="menu__link">ДЗ по макету</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="page">
+            <div class="page__container">
+                <!-- Напрацювання -->
+                <div class="page__position-block position-block">
+                    <h1 id="homework" class="position-block__title">Position</h1>
+                    <p class="position-block__description">Властивість position визначає тип позиціювання відносно вікна
+                        браузера або інших елементів: static , relative , absolute , fixed або sticky (статичний,
+                        відносний, абсолютний, фіксований або клейкий).</p>
+                    <div class="position-block__content">
+                        <ul class="position-block__list">
+                            <li class="position-block__item">
+                                <a href="#static" class="position-block__link">Static</a>
+                            </li>
+                            <li class="position-block__item">
+                                <a href="#relative" class="position-block__link">Relative</a>
+                            </li>
+                            <li class="position-block__item">
+                                <a href="#absolute" class="position-block__link">Absolute</a>
+                            </li>
+                            <li class="position-block__item">
+                                <a href="#fixed" class="position-block__link">Fixed</a>
+                            </li>
+                            <li class="position-block__item">
+                                <a href="#sticky" class="position-block__link">Sticky</a>
+                            </li>
+                        </ul>
+                        <div class="position-block__examples examples">
+                            <div id="static" class="examples__item"> <!-- static -->
+                                <div class="examples__block examples__block--yellow">Block 1 STATIC</div>
+                                <div class="examples__block examples__block--green">Block 2 STATIC</div>
+                                <div class="examples__block examples__block--red">Block 3 STATIC</div>
+                            </div>
+                            <div id="relative" class="examples__item">
+                                <div class="examples__block examples__block--yellow">Block 1 STATIC</div>
+                                <div class="examples__block examples__block--green examples__block--relative">
+                                    Block 2 RELATIVE
+                                </div>
+                                <div class="examples__block examples__block--red">Block 3 STATIC</div>
+                            </div>
+                            <div id="absolute" class="examples__item">
+                                <div class="examples__block examples__block--yellow">Block 1 STATIC</div>
+                                <div class="examples__block examples__block--green examples__block--absolute">Block 2
+                                    ABSOLUTE</div>
+                                <div class="examples__block examples__block--red">Block 3 STATIC</div>
+                            </div>
+                            <div id="fixed" class="examples__item">
+                                <div class="examples__block examples__block--yellow">Block 1 STATIC</div>
+                                <div class="examples__block examples__block--green examples__block--fixed">Block 2 FIXED
+                                </div>
+                                <div class="examples__block examples__block--red">Block 3 STATIC</div>
+                            </div>
+                            <div id="sticky" class="examples__item">
+                                <div class="examples__block examples__block--yellow">Block 1 STATIC</div>
+                                <div class="examples__block examples__block--green examples__block--sticky">Block 2
+                                    STICKY</div>
+                                <div class="examples__block examples__block--red">Block 3 STATIC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sticky -->
+                <div id="sticky-section" class="page__sticky sticky">
+                    <div class="sticky__item">
+                        <h2 id="title-1" class="sticky__title">Sticky title 1</h2>
+                        <div class="sticky__text-block">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maiores perferendis
+                                in, dolores aperiam eveniet error saepe, recusandae earum, dolorum ab obcaecati nisi
+                                enim sed soluta qui! Distinctio, error fugit!
+                                Omnis, perspiciatis sed possimus eligendi voluptatem enim dolores minima recusandae qui
+                                cumque est, ipsum nostrum obcaecati quasi impedit excepturi consequatur veritatis sit
+                                adipisci. Ab deleniti rem tenetur a aut harum.
+                                Suscipit vero ducimus quisquam, iure odit error adipisci velit minus optio eius at hic
+                                natus ipsam, autem expedita quae doloribus molestiae. Pariatur suscipit assumenda
+                                accusantium officia explicabo nostrum, numquam nemo.
+                                Alias, aperiam! Excepturi, explicabo minus? Eum, provident! Voluptates obcaecati quasi
+                                temporibus distinctio dolores aliquam. Culpa odio asperiores quo ipsam corrupti
+                                adipisci, id beatae maiores incidunt, veritatis quibusdam nulla et rem?
+                                Labore molestias ratione voluptate sint blanditiis quam repudiandae at veniam, sed
+                                voluptatum, officia temporibus minima facere deleniti ipsum unde, dolor amet vero.
+                                Quisquam esse repudiandae nostrum earum recusandae. Aliquid, voluptas.
+                                Earum, aspernatur! Assumenda, odio doloremque! Sit facere beatae cum nulla sapiente,
+                                expedita blanditiis, eum qui delectus voluptates repellendus explicabo dignissimos quam
+                                tenetur? Odio aliquam repudiandae ipsam animi ex sed aliquid!
+                                Voluptatum laborum atque natus? Fuga eos, voluptates neque debitis, corrupti possimus,
+                                autem sequi dicta quis sed placeat provident quod soluta? Tempore, voluptatum voluptate.
+                                Modi adipisci vero ullam libero eveniet beatae.
+                                Earum neque dolor ea quasi atque repudiandae corrupti cumque nisi in veritatis ipsam ex
+                                facilis commodi expedita consectetur iste laborum, dicta adipisci ratione consequatur
+                                labore quidem. Id temporibus at consectetur.
+                                Harum esse soluta dolorem modi quidem architecto ipsum odit voluptatem quia quis
+                                temporibus, molestiae officia fugit libero itaque at iusto quo quos quibusdam! At
+                                maiores aperiam fuga, illum beatae inventore.
+                                Porro molestiae soluta accusamus temporibus consequuntur exercitationem quas consequatur
+                                cupiditate id aut. Quod sint perferendis minima ea aspernatur, dicta, magnam eos
+                                consequatur nulla reiciendis magni iste architecto distinctio nam fuga.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sticky__item">
+                        <h2 id="title-2" class="sticky__title">Sticky title 2</h2>
+                        <div class="sticky__text-block">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maiores perferendis
+                                in, dolores aperiam eveniet error saepe, recusandae earum, dolorum ab obcaecati nisi
+                                enim sed soluta qui! Distinctio, error fugit!
+                                Omnis, perspiciatis sed possimus eligendi voluptatem enim dolores minima recusandae qui
+                                cumque est, ipsum nostrum obcaecati quasi impedit excepturi consequatur veritatis sit
+                                adipisci. Ab deleniti rem tenetur a aut harum.
+                                Suscipit vero ducimus quisquam, iure odit error adipisci velit minus optio eius at hic
+                                natus ipsam, autem expedita quae doloribus molestiae. Pariatur suscipit assumenda
+                                accusantium officia explicabo nostrum, numquam nemo.
+                                Alias, aperiam! Excepturi, explicabo minus? Eum, provident! Voluptates obcaecati quasi
+                                temporibus distinctio dolores aliquam. Culpa odio asperiores quo ipsam corrupti
+                                adipisci, id beatae maiores incidunt, veritatis quibusdam nulla et rem?
+                                Labore molestias ratione voluptate sint blanditiis quam repudiandae at veniam, sed
+                                voluptatum, officia temporibus minima facere deleniti ipsum unde, dolor amet vero.
+                                Quisquam esse repudiandae nostrum earum recusandae. Aliquid, voluptas.
+                                Earum, aspernatur! Assumenda, odio doloremque! Sit facere beatae cum nulla sapiente,
+                                expedita blanditiis, eum qui delectus voluptates repellendus explicabo dignissimos quam
+                                tenetur? Odio aliquam repudiandae ipsam animi ex sed aliquid!
+                                Voluptatum laborum atque natus? Fuga eos, voluptates neque debitis, corrupti possimus,
+                                autem sequi dicta quis sed placeat provident quod soluta? Tempore, voluptatum voluptate.
+                                Modi adipisci vero ullam libero eveniet beatae.
+                                Earum neque dolor ea quasi atque repudiandae corrupti cumque nisi in veritatis ipsam ex
+                                facilis commodi expedita consectetur iste laborum, dicta adipisci ratione consequatur
+                                labore quidem. Id temporibus at consectetur.
+                                Harum esse soluta dolorem modi quidem architecto ipsum odit voluptatem quia quis
+                                temporibus, molestiae officia fugit libero itaque at iusto quo quos quibusdam! At
+                                maiores aperiam fuga, illum beatae inventore.
+                                Porro molestiae soluta accusamus temporibus consequuntur exercitationem quas consequatur
+                                cupiditate id aut. Quod sint perferendis minima ea aspernatur, dicta, magnam eos
+                                consequatur nulla reiciendis magni iste architecto distinctio nam fuga.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sticky__item">
+                        <h2 id="title-3" class="sticky__title">Sticky title 3</h2>
+                        <div class="sticky__text-block">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maiores perferendis
+                                in, dolores aperiam eveniet error saepe, recusandae earum, dolorum ab obcaecati nisi
+                                enim sed soluta qui! Distinctio, error fugit!
+                                Omnis, perspiciatis sed possimus eligendi voluptatem enim dolores minima recusandae qui
+                                cumque est, ipsum nostrum obcaecati quasi impedit excepturi consequatur veritatis sit
+                                adipisci. Ab deleniti rem tenetur a aut harum.
+                                Suscipit vero ducimus quisquam, iure odit error adipisci velit minus optio eius at hic
+                                natus ipsam, autem expedita quae doloribus molestiae. Pariatur suscipit assumenda
+                                accusantium officia explicabo nostrum, numquam nemo.
+                                Alias, aperiam! Excepturi, explicabo minus? Eum, provident! Voluptates obcaecati quasi
+                                temporibus distinctio dolores aliquam. Culpa odio asperiores quo ipsam corrupti
+                                adipisci, id beatae maiores incidunt, veritatis quibusdam nulla et rem?
+                                Labore molestias ratione voluptate sint blanditiis quam repudiandae at veniam, sed
+                                voluptatum, officia temporibus minima facere deleniti ipsum unde, dolor amet vero.
+                                Quisquam esse repudiandae nostrum earum recusandae. Aliquid, voluptas.
+                                Earum, aspernatur! Assumenda, odio doloremque! Sit facere beatae cum nulla sapiente,
+                                expedita blanditiis, eum qui delectus voluptates repellendus explicabo dignissimos quam
+                                tenetur? Odio aliquam repudiandae ipsam animi ex sed aliquid!
+                                Voluptatum laborum atque natus? Fuga eos, voluptates neque debitis, corrupti possimus,
+                                autem sequi dicta quis sed placeat provident quod soluta? Tempore, voluptatum voluptate.
+                                Modi adipisci vero ullam libero eveniet beatae.
+                                Earum neque dolor ea quasi atque repudiandae corrupti cumque nisi in veritatis ipsam ex
+                                facilis commodi expedita consectetur iste laborum, dicta adipisci ratione consequatur
+                                labore quidem. Id temporibus at consectetur.
+                                Harum esse soluta dolorem modi quidem architecto ipsum odit voluptatem quia quis
+                                temporibus, molestiae officia fugit libero itaque at iusto quo quos quibusdam! At
+                                maiores aperiam fuga, illum beatae inventore.
+                                Porro molestiae soluta accusamus temporibus consequuntur exercitationem quas consequatur
+                                cupiditate id aut. Quod sint perferendis minima ea aspernatur, dicta, magnam eos
+                                consequatur nulla reiciendis magni iste architecto distinctio nam fuga.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Consulting -->
+                <div id="consulting" class="page__consulting consulting">
+                    <div class="consulting__container">
+                        <div class="consulting__item">
+                            <div class="consulting__social">
+                                <a href="#" class="consulting__inst"></a>
+                                <a href="#" class="consulting__fb"></a>
+                                <a href="#" class="consulting__twitter"></a>                                
+                            </div>
+                            <div class="consulting__content-item">
+                                <h2 class="consulting__name">Nattasha Kelvin</h2>
+                                <p class="consulting__speciality">Managing Director</p>
+                            </div>
+                        </div>
+                        <div class="consulting__item">
+                            <div class="consulting__social">
+                                <a href="#" class="consulting__inst"></a>
+                                <a href="#" class="consulting__fb"></a>
+                                <a href="#" class="consulting__twitter"></a>                                
+                            </div>
+                            <div class="consulting__content-item">
+                                <h2 class="consulting__name">David Simpson</h2>
+                                <p class="consulting__speciality">Designer</p>
+                            </div>
+                        </div>
+                        <div class="consulting__item">
+                            <div class="consulting__social">
+                                <a href="#" class="consulting__inst"></a>
+                                <a href="#" class="consulting__fb"></a>
+                                <a href="#" class="consulting__twitter"></a>                                
+                            </div>
+                            <div class="consulting__content-item">
+                                <h2 class="consulting__name">Madeleine Grant</h2>
+                                <p class="consulting__speciality">Marketing Specialist</p>
+                            </div>
+                        </div>
+                        <div class="consulting__item">
+                            <div class="consulting__social">
+                                <a href="#" class="consulting__inst"></a>
+                                <a href="#" class="consulting__fb"></a>
+                                <a href="#" class="consulting__twitter"></a>                                
+                            </div>
+                            <div class="consulting__content-item">
+                                <h2 class="consulting__name">Jonathan Coleman</h2>
+                                <p class="consulting__speciality">Managing Director</p>
+                            </div>
+                        </div>
+                        <div class="consulting__item">
+                            <div class="consulting__social">
+                                <a href="#" class="consulting__inst"></a>
+                                <a href="#" class="consulting__fb"></a>
+                                <a href="#" class="consulting__twitter"></a>                                
+                            </div>
+                            <div class="consulting__content-item">
+                                <h2 class="consulting__name">Wanda Forsyth</h2>
+                                <p class="consulting__speciality">Designer</p>
+                            </div>
+                        </div>
+                        <div class="consulting__item">
+                            <div class="consulting__social">
+                                <a href="#" class="consulting__inst"></a>
+                                <a href="#" class="consulting__fb"></a>
+                                <a href="#" class="consulting__twitter"></a>                                
+                            </div>
+                            <div class="consulting__content-item">
+                                <h2 class="consulting__name">Austin	Randall</h2>
+                                <p class="consulting__speciality">Marketing Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+
+</html>
