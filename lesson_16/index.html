@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<!-- Форма 1 -->
+			<form id="form-1" action="#" method="GET" class="page__form-1 form-1">
+				<h1 class="form-1__title">My Info</h1>
+				<h2 class="form-1__sub-title">Add Address</h2>
+				<div class="form-1__content">
+					<div class="form-1__line">
+						<label class="form-1__label" for="name">First Name*</label>
+						<input id="name" name="name" autocomplete="off" placeholder="First Name" class="form-1__input"
+							type="text" required>
+					</div>
+					<div class="form-1__line">
+						<label class="form-1__label" for="last-name">Last Name*</label>
+						<input id="last-name" name="last-name" autocomplete="off" placeholder="Last Name"
+							class="form-1__input" type="text" required>
+					</div>
+					<div class="form-1__line">
+						<label class="form-1__label" for="country">Country / Region*</label>
+						<input id="country" name="country" autocomplete="off" placeholder="Country / Region"
+							class="form-1__input" type="text" required>
+					</div>
+					<div class="form-1__line">
+						<label class="form-1__label" for="company">Company Name</label>
+						<input id="company" name="company" autocomplete="off" placeholder="Company (optional)"
+							class="form-1__input" type="text">
+					</div>
+					<div class="form-1__line">
+						<label class="form-1__label" for="address">Street Address*</label>
+						<input id="address" name="address" autocomplete="off" placeholder="House number and street name"
+							class="form-1__input" type="text" required>
+					</div>
+					<div class="form-1__line">
+						<label class="form-1__label" for="sub-address">Apt, suite, unit</label>
+						<input id="sub-address" name="sub-address" autocomplete="off"
+							placeholder="apartment, suite, unit, etc. (optional)" class="form-1__input" type="text">
+					</div>
+					<div class="form-1__line">
+						<label class="form-1__label" for="city">City*</label>
+						<input id="city" name="city" autocomplete="off" placeholder="Town / City" class="form-1__input"
+							type="text" required>
+					</div>
+					<div class="form-1__line form-1__line--relative">
+						<label class="form-1__label" for="state">State*</label>
+						<select id="state" name="state" autocomplete="off" class="form-1__input form-1__input--list"
+							required>
+							<option selected value="">State</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+						<span class="form-1__chevron"></span>
+					</div>
+					<div class="form-1__line">
+						<label class="form-1__label" for="phone">Phone*</label>
+						<input id="phone" name="phone" autocomplete="off" placeholder="Phone" class="form-1__input"
+							type="tel" required>
+					</div>
+					<div class="form-1__line">
+						<label class="form-1__label" for="postal">Postal Code*</label>
+						<input id="postal" name="postal" autocomplete="off" placeholder="Postal Code"
+							class="form-1__input" type="text" required>
+					</div>
+					<div class="form-1__line form-1__line--textarea">
+						<label class="form-1__label" for="instruction">Delivery Instruction</label>
+						<textarea id="instruction" name="instruction" autocomplete="off"
+							placeholder="Delivery Instruction" class="form-1__input form-1__input--textarea"></textarea>
+					</div>
+					<div class="form-1__line form-1__line--checkbox">
+						<div class="form-1__checkbox checkbox">
+							<input id="set-shipping-address" name="set-shipping-address" class="checkbox__input"
+								type="checkbox">
+							<label class="checkbox__label" for="set-shipping-address">Set as default shipping
+								address</label>
+						</div>
+						<div class="form-1__checkbox checkbox">
+							<input id="set-billing-address" name="set-billing-address" class="checkbox__input"
+								type="checkbox">
+							<label class="checkbox__label" for="set-billing-address">Set as default billing
+								address</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-1__buttons">
+					<button class="form-1__button" type="submit" form="form-1">Save</button>
+					<button class="form-1__reset" type="reset" form="form-1">Cancel</button>
+				</div>
+			</form>
+
+			<!-- Форма 2 -->
+			<form id="form-2" action="#" method="GET" class="page__form-2 form-2">
+				<h2 class="form-2__title form-2__title--decor">Check Out</h2>
+				<h3 class="form-2__sub-title">Billing Details</h3>
+				<div class="form-2__content">
+					<div class="form-2__line">
+						<label class="form-2__label" for="name-2">First Name*</label>
+						<input id="name-2" name="name" autocomplete="off" placeholder="First Name" class="form-2__input"
+							type="text" required>
+					</div>
+					<div class="form-2__line">
+						<label class="form-2__label" for="last-name-2">Last Name*</label>
+						<input id="last-name-2" name="last-name" autocomplete="off" placeholder="Last Name"
+							class="form-2__input" type="text" required>
+					</div>
+					<div class="form-2__line">
+						<label class="form-2__label" for="country-2">Country / Region*</label>
+						<input id="country-2" name="country" autocomplete="off" placeholder="Country / Region"
+							class="form-2__input" type="text" required>
+					</div>
+					<div class="form-2__line">
+						<label class="form-2__label" for="company-2">Company Name</label>
+						<input id="company-2" name="company" autocomplete="off" placeholder="Company (optional)"
+							class="form-2__input" type="text">
+					</div>
+					<div class="form-2__line">
+						<label class="form-2__label" for="address-2">Street Address*</label>
+						<input id="address-2" name="address" autocomplete="off"
+							placeholder="House number and street name" class="form-2__input" type="text" required>
+					</div>
+					<div class="form-2__line">
+						<label class="form-2__label" for="sub-address-2">Apt, suite, unit</label>
+						<input id="sub-address-2" name="sub-address" autocomplete="off"
+							placeholder="apartment, suite, unit, etc. (optional)" class="form-2__input" type="text">
+					</div>
+					<div class="form-2__address-box">
+						<div class="form-2__line form-2__line--small-basis">
+							<label class="form-2__label" for="city-2">City*</label>
+							<input id="city-2" name="city" autocomplete="off" placeholder="Town / City"
+								class="form-1__input" type="text" required>
+						</div>
+						<div class="form-2__line form-2__line--small-basis">
+							<label class="form-2__label" for="state">State*</label>
+							<select id="state-2" name="state" autocomplete="off"
+								class="form-1__input form-1__input--list" required>
+								<option selected value="">State</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select>
+						</div>
+						<div class="form-2__line form-2__line--small-basis">
+							<label class="form-2__label" for="postal-2">Postal Code*</label>
+							<input id="postal-2" name="postal" autocomplete="off" placeholder="Postal Code"
+								class="form-2__input" type="text" required>
+						</div>
+					</div>
+					<div class="form-2__line">
+						<label class="form-2__label" for="phone-2">Phone*</label>
+						<input id="phone-2" name="phone" autocomplete="off" placeholder="Phone" class="form-1__input"
+							type="tel" required>
+					</div>
+				</div>
+				<button class="form-2__button" type="button" form="form-2">Continue to delivery</button>
+				<div class="checkbox">
+					<input id="save-info" name="save-info" class="checkbox__input" type="checkbox">
+					<label class="checkbox__label checkbox__label--fz18px" for="save-info">Save my information for a
+						faster checkout</label>
+				</div>
+
+				<div class="form-2__stroke"></div>
+
+				<h3 class="form-2__sub-title form-2__sub-title--mb8">Shipping Address</h3>
+				<div class="form-2__text">
+					<p>Select the address that matches your card or payment method.</p>
+				</div>
+
+				<div class="form-2__group">
+					<div class="form-2__item">
+						<input checked class="form-2__radio" id="ship-add-01" value="billing" name="ship-add"
+							type="radio">
+						<label class="form-2__label form-2__label--radio" for="ship-add-01">
+							Same as Billing address
+						</label>
+					</div>
+					<div class="form-2__stroke form-2__stroke--group"></div>
+					<div class="form-2__item">
+						<input class="form-2__radio" id="ship-add-02" value="different" name="ship-add" type="radio">
+						<label class="form-2__label form-2__label--radio" for="ship-add-02">
+							Use a different shipping address
+						</label>
+					</div>
+				</div>
+
+				<div class="form-2__stroke"></div>
+
+				<h3 class="form-2__sub-title form-2__sub-title--mb30">Shipping Method</h3>
+				<div class="form-2__group">
+					<div class="form-2__label form-2__label--text">
+						<p>Arrives by Monday, June 7</p>
+					</div>
+
+					<div class="form-2__stroke form-2__stroke--group"></div>
+
+					<div class="form-2__label-wrapper">
+						<div class="form-2__label form-2__label--text">
+							<p>Delivery Charges</p>
+							<p>$5.00</p>
+						</div>
+						<p class="form-2__desc">Additional fess may apply</p>
+					</div>
+				</div>
+
+				<div class="form-2__stroke"></div>
+
+				<h3 class="form-2__sub-title form-2__sub-title--mb8">Payment Method</h3>
+				<div class="form-2__text">
+					<p>All transactions are secure and encrypted.</p>
+				</div>
+				<div class="form-2__group form-2__group--mb50">
+					<div class="form-2__item">
+						<input checked class="form-2__radio" id="payment-met-01" value="card" name="payment-met"
+							type="radio">
+						<label class="form-2__label form-2__label--radio form-2__label--mb30" for="payment-met-01">
+							<span class="form-2__info">
+								<span>Credit Card</span>
+								<span class="form-2__desc form-2__desc--payment">We accept all major credit cards.</span>
+							</span>
+						</label>
+						<div class="form-2__card card">
+							<ul class="card__list">
+								<li class="card__item card__item--googlepay">
+									<a href="#" class="card__link"></a>
+								</li>
+								<li class="card__item card__item--visa">
+									<a href="#" class="card__link"></a>
+								</li>
+								<li class="card__item card__item--paypal">
+									<a href="#" class="card__link"></a>
+								</li>
+								<li class="card__item card__item--paypass">
+									<a href="#" class="card__link"></a>
+								</li>
+							</ul>
+							<div class="card__info">
+								<input class="card__input" id="card-number" placeholder="Card number" name="card-number"
+									type="number" required>
+								<input class="card__input" id="card-name" placeholder="Name of card" name="card-name"
+									type="text" required>
+								<input class="card__input" id="card-exp-date" placeholder="Expiration date (MM/YY)"
+									name="card-exp-date" type="text" required>
+								<input class="card__input" id="card-cvv" placeholder="Security Code" name="card-cvv"
+									type="text" required>
+							</div>
+						</div>
+					</div>
+					<div class="form-2__stroke form-2__stroke--group"></div>
+					<div class="form-2__item">
+						<input class="form-2__radio" id="payment-met-02" value="cash" name="payment-met" type="radio">
+						<label class="form-2__label form-2__label--radio" for="payment-met-02">
+							Cash on Delivery
+						</label>
+					</div>
+					<div class="form-2__stroke form-2__stroke--group"></div>
+					<div class="form-2__item">
+						<input class="form-2__radio" id="payment-met-03" value="PayPal" name="payment-met" type="radio">
+						<label class="form-2__label form-2__label--radio" for="payment-met-03">
+							PayPal
+						</label>
+					</div>
+				</div>
+				<button class="form-2__button" type="submit" form="form-2">Pay now</button>
+			</form>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
